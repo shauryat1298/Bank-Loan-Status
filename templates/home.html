@@ -1,3 +1,31 @@
+<html>
 <h1>
-    Hello World
+    Bank Loan Status Prediction
 </h1>
+<body>
+    <div class="Login">
+        <form action = "{{ url_for('predict')}}" method="post">
+            <input type="text" name="Current Loan Amount" placeholder="Current Loan Amount" required="required"/><br>
+            <input type="text" name="Term" placeholder="Term" required="required"/><br>
+            <input type="text" name="Credit Score" placeholder="Credit Score" required="required"/><br>
+            <input type="text" name="Annual Income" placeholder="Annual Income" required="required"/><br>
+            <input type="text" name="Years in current job" placeholder="Years in current job" required="required"/><br>
+            <input type="text" name="Home Ownership" placeholder="Home Ownership" required="required"/><br>
+            <input type="text" name="Purpose" placeholder="Purpose" required="required"/><br>
+            <input type="text" name="Monthly Debt" placeholder="Monthly Debt" required="required"/><br>
+            <input type="text" name="Years of Credit History" placeholder="Years of Credit History" required="required"/><br>
+            <input type="text" name="Number of Open Accounts" placeholder="Number of Open Accounts" required="required"/><br>
+            <input type="text" name="Number of Credit Problems" placeholder="Number of Credit Problems" required="required"/><br>
+            <input type="text" name="Current Credit Balance" placeholder="Current Credit Balance" required="required"/><br>
+            <input type="text" name="Maximum Open Credit" placeholder="Maximum Open Credit" required="required"/><br>
+            <input type="text" name="Bankruptcies" placeholder="Bankruptcies" required="required"/><br>
+            <input type="text" name="Tax Liens" placeholder="Tax Liens" required="required"/><br>
+
+            <button type="SUBMIT">PREDICT</button>
+        </form>
+</div>
+
+{{prediction_text}}
+
+</body>
+</html>
