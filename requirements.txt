@@ -1,0 +1,7 @@
+Requirements for the ipynb file:
+
+1. Numpy library
+2. Pandas
+3. Matplotlib
+4. Sklearn
+5. Flask
