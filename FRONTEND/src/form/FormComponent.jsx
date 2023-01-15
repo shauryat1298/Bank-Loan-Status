@@ -229,7 +229,7 @@ export function FormikStepper({
     delete values.firstName;
     delete values.lastName;
     const requestValues = { "data": values };
-    return axios.post('http://localhost:5000/predict_api', requestValues)
+    return axios.post('https://bank-loan-status-production.up.railway.app/predict_api', requestValues)
   }
 
   return (
